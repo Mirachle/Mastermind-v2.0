@@ -1,0 +1,373 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.Bloom?>
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="632.0" prefWidth="345.0" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mycompany.mastermind.FXMLController">
+    <stylesheets>
+        <URL value="@/styles/Styles.css" />
+    </stylesheets>
+    <children>
+      <GridPane hgap="10.0" layoutY="600.0" prefHeight="30.0" prefWidth="365.0">
+         <children>
+              <Button fx:id="egy" onAction="#gombNyomas" prefWidth="300.0" style="-fx-border-color: #000000;" text="1" textFill="TRANSPARENT">
+               <effect>
+                  <InnerShadow blurType="GAUSSIAN" />
+               </effect></Button>
+              <Button fx:id="ketto" onAction="#gombNyomas" prefWidth="300.0" style="-fx-border-color: #000000;" text="2" textFill="TRANSPARENT" GridPane.columnIndex="1">
+               <effect>
+                  <InnerShadow blurType="GAUSSIAN" />
+               </effect></Button>
+              <Button fx:id="harom" onAction="#gombNyomas" prefWidth="300.0" style="-fx-border-color: #000000;" text="3" textFill="TRANSPARENT" GridPane.columnIndex="2">
+               <effect>
+                  <InnerShadow blurType="GAUSSIAN" />
+               </effect></Button>
+              <Button fx:id="negy" onAction="#gombNyomas" prefWidth="300.0" style="-fx-border-color: #000000;" text="4" textFill="TRANSPARENT" GridPane.columnIndex="3">
+               <effect>
+                  <InnerShadow blurType="GAUSSIAN" />
+               </effect></Button>
+              <Button fx:id="ot" onAction="#gombNyomas" prefWidth="300.0" style="-fx-border-color: #000000;" text="5" textFill="TRANSPARENT" GridPane.columnIndex="4">
+               <effect>
+                  <InnerShadow blurType="GAUSSIAN" />
+               </effect></Button>
+              <Button fx:id="hat" onAction="#gombNyomas" prefWidth="300.0" style="-fx-border-color: #000000;" text="6" textFill="TRANSPARENT" GridPane.columnIndex="5">
+               <effect>
+                  <InnerShadow blurType="GAUSSIAN" />
+               </effect></Button>
+              <Button fx:id="het" onAction="#gombNyomas" prefWidth="300.0" style="-fx-border-color: #000000;" text="7" textFill="TRANSPARENT" GridPane.columnIndex="6">
+               <effect>
+                  <InnerShadow blurType="GAUSSIAN" />
+               </effect></Button>
+              <Button fx:id="nyolc" onAction="#gombNyomas" prefWidth="300.0" style="-fx-border-color: #000000;" text="8" textFill="TRANSPARENT" GridPane.columnIndex="7">
+               <effect>
+                  <InnerShadow blurType="GAUSSIAN" />
+               </effect></Button>
+         </children>
+      </GridPane>
+      <GridPane layoutX="0" layoutY="1.0" prefHeight="545.0" prefWidth="365.0">
+         <children>
+            <Circle fx:id="kor1" fill="#d3d3d3" radius="35.0" stroke="BLACK" strokeType="INSIDE" GridPane.rowIndex="7" />
+            <Circle fx:id="kor13" fill="#d3d3d3" radius="35.0" stroke="BLACK" strokeType="INSIDE" GridPane.rowIndex="4" />
+            <Circle fx:id="kor9" fill="#d3d3d3" radius="35.0" stroke="BLACK" strokeType="INSIDE" GridPane.rowIndex="5" />
+            <Circle fx:id="kor5" fill="#d3d3d3" radius="35.0" stroke="BLACK" strokeType="INSIDE" GridPane.rowIndex="6" />
+            <Circle fx:id="kor4" fill="#d3d3d3" radius="35.0" stroke="BLACK" strokeType="INSIDE" GridPane.columnIndex="3" GridPane.rowIndex="7" />
+            <Circle fx:id="kor3" fill="#d3d3d3" radius="35.0" stroke="BLACK" strokeType="INSIDE" GridPane.columnIndex="2" GridPane.rowIndex="7" />
+            <Circle fx:id="kor8" fill="#d3d3d3" radius="35.0" stroke="BLACK" strokeType="INSIDE" GridPane.columnIndex="3" GridPane.rowIndex="6" />
+            <Circle fx:id="kor7" fill="#d3d3d3" radius="35.0" stroke="BLACK" strokeType="INSIDE" GridPane.columnIndex="2" GridPane.rowIndex="6" />
+            <Circle fx:id="kor12" fill="#d3d3d3" radius="35.0" stroke="BLACK" strokeType="INSIDE" GridPane.columnIndex="3" GridPane.rowIndex="5" />
+            <Circle fx:id="kor11" fill="#d3d3d3" radius="35.0" stroke="BLACK" strokeType="INSIDE" GridPane.columnIndex="2" GridPane.rowIndex="5" />
+            <Circle fx:id="kor16" fill="#d3d3d3" radius="35.0" stroke="BLACK" strokeType="INSIDE" GridPane.columnIndex="3" GridPane.rowIndex="4" />
+            <Circle fx:id="kor15" fill="#d3d3d3" radius="35.0" stroke="BLACK" strokeType="INSIDE" GridPane.columnIndex="2" GridPane.rowIndex="4" />
+            <Circle fx:id="kor2" fill="#d3d3d3" radius="35.0" stroke="BLACK" strokeType="INSIDE" GridPane.columnIndex="1" GridPane.rowIndex="7" />
+            <Circle fx:id="kor6" fill="#d3d3d3" radius="35.0" stroke="BLACK" strokeType="INSIDE" GridPane.columnIndex="1" GridPane.rowIndex="6" />
+            <Circle fx:id="kor10" fill="#d3d3d3" radius="35.0" stroke="BLACK" strokeType="INSIDE" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+            <Circle fx:id="kor14" fill="#d3d3d3" radius="35.0" stroke="BLACK" strokeType="INSIDE" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+            <GridPane GridPane.columnIndex="5" GridPane.rowIndex="7">
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <Circle fx:id="kisKor1" fill="GREY" radius="10.0" stroke="BLACK" strokeType="INSIDE" GridPane.halignment="RIGHT" GridPane.valignment="BOTTOM">
+                     <effect>
+                        <Bloom />
+                     </effect>
+                  </Circle>
+                  <Circle fx:id="kisKor3" fill="GREY" radius="10.0" stroke="BLACK" strokeType="INSIDE" GridPane.halignment="RIGHT" GridPane.rowIndex="1" GridPane.valignment="TOP">
+                     <effect>
+                        <Bloom />
+                     </effect>
+                  </Circle>
+                  <Circle fx:id="kisKor2" fill="GREY" radius="10.0" stroke="BLACK" strokeType="INSIDE" GridPane.columnIndex="1" GridPane.halignment="LEFT" GridPane.valignment="BOTTOM">
+                     <effect>
+                        <Bloom />
+                     </effect>
+                  </Circle>
+                  <Circle fx:id="kisKor4" fill="GREY" radius="10.0" stroke="BLACK" strokeType="INSIDE" GridPane.columnIndex="1" GridPane.halignment="LEFT" GridPane.rowIndex="1" GridPane.valignment="TOP">
+                     <effect>
+                        <Bloom />
+                     </effect>
+                  </Circle>
+               </children>
+            </GridPane>
+            <GridPane GridPane.columnIndex="5" GridPane.rowIndex="4">
+               <columnConstraints>
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+               </columnConstraints>
+               <rowConstraints>
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+               </rowConstraints>
+               <children>
+                  <Circle fx:id="kisKor13" fill="GREY" radius="10.0" stroke="BLACK" strokeType="INSIDE" GridPane.halignment="RIGHT" GridPane.valignment="BOTTOM">
+                     <effect>
+                        <Bloom />
+                     </effect>
+                  </Circle>
+                  <Circle fx:id="kisKor15" fill="GREY" radius="10.0" stroke="BLACK" strokeType="INSIDE" GridPane.halignment="RIGHT" GridPane.rowIndex="1" GridPane.valignment="TOP">
+                     <effect>
+                        <Bloom />
+                     </effect>
+                  </Circle>
+                  <Circle fx:id="kisKor14" fill="GREY" radius="10.0" stroke="BLACK" strokeType="INSIDE" GridPane.columnIndex="1" GridPane.halignment="LEFT" GridPane.valignment="BOTTOM">
+                     <effect>
+                        <Bloom />
+                     </effect>
+                  </Circle>
+                  <Circle fx:id="kisKor16" fill="GREY" radius="10.0" stroke="BLACK" strokeType="INSIDE" GridPane.columnIndex="1" GridPane.halignment="LEFT" GridPane.rowIndex="1" GridPane.valignment="TOP">
+                     <effect>
+                        <Bloom />
+                     </effect>
+                  </Circle>
+               </children>
+            </GridPane>
+            <GridPane GridPane.columnIndex="5" GridPane.rowIndex="5">
+               <columnConstraints>
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+               </columnConstraints>
+               <rowConstraints>
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+               </rowConstraints>
+               <children>
+                  <Circle fx:id="kisKor9" fill="GREY" radius="10.0" stroke="BLACK" strokeType="INSIDE" GridPane.halignment="RIGHT" GridPane.valignment="BOTTOM">
+                     <effect>
+                        <Bloom />
+                     </effect>
+                  </Circle>
+                  <Circle fx:id="kisKor11" fill="GREY" radius="10.0" stroke="BLACK" strokeType="INSIDE" GridPane.halignment="RIGHT" GridPane.rowIndex="1" GridPane.valignment="TOP">
+                     <effect>
+                        <Bloom />
+                     </effect>
+                  </Circle>
+                  <Circle fx:id="kisKor10" fill="GREY" radius="10.0" stroke="BLACK" strokeType="INSIDE" GridPane.columnIndex="1" GridPane.halignment="LEFT" GridPane.valignment="BOTTOM">
+                     <effect>
+                        <Bloom />
+                     </effect>
+                  </Circle>
+                  <Circle fx:id="kisKor12" fill="GREY" radius="10.0" stroke="BLACK" strokeType="INSIDE" GridPane.columnIndex="1" GridPane.halignment="LEFT" GridPane.rowIndex="1" GridPane.valignment="TOP">
+                     <effect>
+                        <Bloom />
+                     </effect>
+                  </Circle>
+               </children>
+            </GridPane>
+            <GridPane GridPane.columnIndex="5" GridPane.rowIndex="6">
+               <columnConstraints>
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+               </columnConstraints>
+               <rowConstraints>
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+               </rowConstraints>
+               <children>
+                  <Circle fx:id="kisKor5" fill="GREY" radius="10.0" stroke="BLACK" strokeType="INSIDE" GridPane.halignment="RIGHT" GridPane.valignment="BOTTOM">
+                     <effect>
+                        <Bloom />
+                     </effect>
+                  </Circle>
+                  <Circle fx:id="kisKor7" fill="GREY" radius="10.0" stroke="BLACK" strokeType="INSIDE" GridPane.halignment="RIGHT" GridPane.rowIndex="1" GridPane.valignment="TOP">
+                     <effect>
+                        <Bloom />
+                     </effect>
+                  </Circle>
+                  <Circle fx:id="kisKor6" fill="GREY" radius="10.0" stroke="BLACK" strokeType="INSIDE" GridPane.columnIndex="1" GridPane.halignment="LEFT" GridPane.valignment="BOTTOM">
+                     <effect>
+                        <Bloom />
+                     </effect>
+                  </Circle>
+                  <Circle fx:id="kisKor8" fill="GREY" radius="10.0" stroke="BLACK" strokeType="INSIDE" GridPane.columnIndex="1" GridPane.halignment="LEFT" GridPane.rowIndex="1" GridPane.valignment="TOP">
+                     <effect>
+                        <Bloom />
+                     </effect>
+                  </Circle>
+               </children>
+            </GridPane>
+            <Circle fx:id="kor29" fill="#d3d3d3" radius="35.0" stroke="BLACK" strokeType="INSIDE" />
+            <Circle fx:id="kor28" fill="#d3d3d3" radius="35.0" stroke="BLACK" strokeType="INSIDE" GridPane.columnIndex="3" GridPane.rowIndex="1" />
+            <Circle fx:id="kor23" fill="#d3d3d3" radius="35.0" stroke="BLACK" strokeType="INSIDE" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+            <Circle fx:id="kor18" fill="#d3d3d3" radius="35.0" stroke="BLACK" strokeType="INSIDE" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+            <Circle fx:id="kor32" fill="#d3d3d3" radius="35.0" stroke="BLACK" strokeType="INSIDE" GridPane.columnIndex="3" />
+            <Circle fx:id="kor24" fill="#d3d3d3" radius="35.0" stroke="BLACK" strokeType="INSIDE" GridPane.columnIndex="3" GridPane.rowIndex="2" />
+            <Circle fx:id="kor22" fill="#d3d3d3" radius="35.0" stroke="BLACK" strokeType="INSIDE" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+            <Circle fx:id="kor27" fill="#d3d3d3" radius="35.0" stroke="BLACK" strokeType="INSIDE" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+            <Circle fx:id="kor31" fill="#d3d3d3" radius="35.0" stroke="BLACK" strokeType="INSIDE" GridPane.columnIndex="2" />
+            <Circle fx:id="kor26" fill="#d3d3d3" radius="35.0" stroke="BLACK" strokeType="INSIDE" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <Circle fx:id="kor30" fill="#d3d3d3" radius="35.0" stroke="BLACK" strokeType="INSIDE" GridPane.columnIndex="1" />
+            <Circle fx:id="kor21" fill="#d3d3d3" radius="35.0" stroke="BLACK" strokeType="INSIDE" GridPane.rowIndex="2" />
+            <Circle fx:id="kor25" fill="#d3d3d3" radius="35.0" stroke="BLACK" strokeType="INSIDE" GridPane.rowIndex="1" />
+            <Circle fx:id="kor17" fill="#d3d3d3" radius="35.0" stroke="BLACK" strokeType="INSIDE" GridPane.rowIndex="3" />
+            <Circle fx:id="kor20" fill="#d3d3d3" radius="35.0" stroke="BLACK" strokeType="INSIDE" GridPane.columnIndex="3" GridPane.rowIndex="3" />
+            <Circle fx:id="kor19" fill="#d3d3d3" radius="35.0" stroke="BLACK" strokeType="INSIDE" GridPane.columnIndex="2" GridPane.rowIndex="3" />
+            <GridPane GridPane.columnIndex="5" GridPane.rowIndex="1">
+               <columnConstraints>
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+               </columnConstraints>
+               <rowConstraints>
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+               </rowConstraints>
+               <children>
+                  <Circle fx:id="kisKor25" fill="GREY" radius="10.0" stroke="BLACK" strokeType="INSIDE" GridPane.halignment="RIGHT" GridPane.valignment="BOTTOM">
+                     <effect>
+                        <Bloom />
+                     </effect>
+                  </Circle>
+                  <Circle fx:id="kisKor27" fill="GREY" radius="10.0" stroke="BLACK" strokeType="INSIDE" GridPane.halignment="RIGHT" GridPane.rowIndex="1" GridPane.valignment="TOP">
+                     <effect>
+                        <Bloom />
+                     </effect>
+                  </Circle>
+                  <Circle fx:id="kisKor26" fill="GREY" radius="10.0" stroke="BLACK" strokeType="INSIDE" GridPane.columnIndex="1" GridPane.halignment="LEFT" GridPane.valignment="BOTTOM">
+                     <effect>
+                        <Bloom />
+                     </effect>
+                  </Circle>
+                  <Circle fx:id="kisKor28" fill="GREY" radius="10.0" stroke="BLACK" strokeType="INSIDE" GridPane.columnIndex="1" GridPane.halignment="LEFT" GridPane.rowIndex="1" GridPane.valignment="TOP">
+                     <effect>
+                        <Bloom />
+                     </effect>
+                  </Circle>
+               </children>
+            </GridPane>
+            <GridPane GridPane.columnIndex="5">
+               <columnConstraints>
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+               </columnConstraints>
+               <rowConstraints>
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+               </rowConstraints>
+               <children>
+                  <Circle fx:id="kisKor29" fill="GREY" radius="10.0" stroke="BLACK" strokeType="INSIDE" GridPane.halignment="RIGHT" GridPane.valignment="BOTTOM">
+                     <effect>
+                        <Bloom />
+                     </effect>
+                  </Circle>
+                  <Circle fx:id="kisKor31" fill="GREY" radius="10.0" stroke="BLACK" strokeType="INSIDE" GridPane.halignment="RIGHT" GridPane.rowIndex="1" GridPane.valignment="TOP">
+                     <effect>
+                        <Bloom />
+                     </effect>
+                  </Circle>
+                  <Circle fx:id="kisKor30" fill="GREY" radius="10.0" stroke="BLACK" strokeType="INSIDE" GridPane.columnIndex="1" GridPane.halignment="LEFT" GridPane.valignment="BOTTOM">
+                     <effect>
+                        <Bloom />
+                     </effect>
+                  </Circle>
+                  <Circle fx:id="kisKor32" fill="GREY" radius="10.0" stroke="BLACK" strokeType="INSIDE" GridPane.columnIndex="1" GridPane.halignment="LEFT" GridPane.rowIndex="1" GridPane.valignment="TOP">
+                     <effect>
+                        <Bloom />
+                     </effect>
+                  </Circle>
+               </children>
+            </GridPane>
+            <GridPane GridPane.columnIndex="5" GridPane.rowIndex="2">
+               <columnConstraints>
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+               </columnConstraints>
+               <rowConstraints>
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+               </rowConstraints>
+               <children>
+                  <Circle fx:id="kisKor21" fill="GREY" radius="10.0" stroke="BLACK" strokeType="INSIDE" GridPane.halignment="RIGHT" GridPane.valignment="BOTTOM">
+                     <effect>
+                        <Bloom />
+                     </effect>
+                  </Circle>
+                  <Circle fx:id="kisKor23" fill="GREY" radius="10.0" stroke="BLACK" strokeType="INSIDE" GridPane.halignment="RIGHT" GridPane.rowIndex="1" GridPane.valignment="TOP">
+                     <effect>
+                        <Bloom />
+                     </effect>
+                  </Circle>
+                  <Circle fx:id="kisKor22" fill="GREY" radius="10.0" stroke="BLACK" strokeType="INSIDE" GridPane.columnIndex="1" GridPane.halignment="LEFT" GridPane.valignment="BOTTOM">
+                     <effect>
+                        <Bloom />
+                     </effect>
+                  </Circle>
+                  <Circle fx:id="kisKor24" fill="GREY" radius="10.0" stroke="BLACK" strokeType="INSIDE" GridPane.columnIndex="1" GridPane.halignment="LEFT" GridPane.rowIndex="1" GridPane.valignment="TOP">
+                     <effect>
+                        <Bloom />
+                     </effect>
+                  </Circle>
+               </children>
+            </GridPane>
+            <GridPane GridPane.columnIndex="5" GridPane.rowIndex="3">
+               <columnConstraints>
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+               </columnConstraints>
+               <rowConstraints>
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+               </rowConstraints>
+               <children>
+                  <Circle fx:id="kisKor17" fill="GREY" radius="10.0" stroke="BLACK" strokeType="INSIDE" GridPane.halignment="RIGHT" GridPane.valignment="BOTTOM">
+                     <effect>
+                        <Bloom />
+                     </effect>
+                  </Circle>
+                  <Circle fx:id="kisKor19" fill="GREY" radius="10.0" stroke="BLACK" strokeType="INSIDE" GridPane.halignment="RIGHT" GridPane.rowIndex="1" GridPane.valignment="TOP">
+                     <effect>
+                        <Bloom />
+                     </effect>
+                  </Circle>
+                  <Circle fx:id="kisKor18" fill="GREY" radius="10.0" stroke="BLACK" strokeType="INSIDE" GridPane.columnIndex="1" GridPane.halignment="LEFT" GridPane.valignment="BOTTOM">
+                     <effect>
+                        <Bloom />
+                     </effect>
+                  </Circle>
+                  <Circle fx:id="kisKor20" fill="GREY" radius="10.0" stroke="BLACK" strokeType="INSIDE" GridPane.columnIndex="1" GridPane.halignment="LEFT" GridPane.rowIndex="1" GridPane.valignment="TOP">
+                     <effect>
+                        <Bloom />
+                     </effect>
+                  </Circle>
+               </children>
+            </GridPane>
+         </children>
+         <columnConstraints>
+            <ColumnConstraints />
+            <ColumnConstraints />
+            <ColumnConstraints />
+            <ColumnConstraints />
+            <ColumnConstraints />
+            <ColumnConstraints />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints />
+            <RowConstraints />
+            <RowConstraints />
+            <RowConstraints />
+            <RowConstraints />
+            <RowConstraints />
+            <RowConstraints />
+            <RowConstraints />
+         </rowConstraints>
+      </GridPane>
+      <Button fx:id="jatek" disable="true" layoutX="292.0" layoutY="561.0" mnemonicParsing="false" onAction="#ujJatek" text="Új játék!" textAlignment="CENTER" visible="false" />
+        <Label fx:id="label" layoutX="20.0" layoutY="50.0" minHeight="50.0" minWidth="69" textAlignment="CENTER">
+         <font>
+            <Font name="System Bold Italic" size="30.0" />
+         </font>
+      </Label>
+    </children>
+</AnchorPane>

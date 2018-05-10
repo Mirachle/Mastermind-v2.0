@@ -1,0 +1,68 @@
+label{
+    -fx-background-fills: white;
+}
+
+#egy{
+    -fx-background-color: red;
+}
+
+#ketto{
+    -fx-background-color: green;
+}
+
+#harom{
+    -fx-background-color: blue;
+}
+
+#negy{
+    -fx-background-color: yellow;
+}
+
+#ot{
+    -fx-background-color: purple;
+}
+
+#hat{
+    -fx-background-color: magenta;
+}
+
+#het{
+    -fx-background-color: aquamarine;
+}
+
+#nyolc{
+    -fx-background-color: chocolate;
+}
+
+
+#egy:hover{
+    -fx-background-color: indianred;
+}
+
+#ketto:hover{
+    -fx-background-color: lightgreen;
+}
+
+#harom:hover{
+    -fx-background-color: lightblue;
+}
+
+#negy:hover{
+    -fx-background-color: lightgoldenrodyellow;
+}
+
+#ot:hover{
+    -fx-background-color: plum;
+}
+
+#hat:hover{
+    -fx-background-color: pink;
+}
+
+#het:hover{
+    -fx-background-color: azure;
+}
+
+#nyolc:hover{
+    -fx-background-color: lightsalmon;
+}
